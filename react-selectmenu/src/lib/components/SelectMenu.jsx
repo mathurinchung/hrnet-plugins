@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 import './SelectMenu.css';
 
 function SelectMenu({ id, options, onChange }) {
