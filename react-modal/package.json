@@ -1,31 +1,30 @@
 {
   "name": "@hrnet-plugins/react-modal",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": [ "dist" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mathurinchung/hrnet-plugins.git"
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.7.5",
+    "@types/react": "^18.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dist": "cp -R src/lib dist"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/prop-types": "^15.7.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "dist": "rm -rf dist && cp -R src/lib dist"
   }
 }
