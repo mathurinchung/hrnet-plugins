@@ -4,12 +4,17 @@
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": [ "dist" ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mathurinchung/hrnet-plugins.git"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.6",
     "react": "^18.2.0",
@@ -25,6 +30,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dist": "rm -rf dist && cp -R src/lib dist"
+    "dist": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   }
 }
