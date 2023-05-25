@@ -5,14 +5,20 @@
 
 .select-menu {
   position: relative;
+  width: 258px;
+  height: 32.78px;
+  max-height: 300px;
+}
+
+.select-menu-button {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid #c5c5c5;
   border-radius: 3px;
   padding: 6.4px 16px;
-  width: 258px;
-  height: 32.78px;
+  width: 100%;
   color: #454545;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 1em;
@@ -26,8 +32,7 @@
   border: 1px solid #c5c5c5;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-  width: 256px;
-  max-height: 300px;
+  width: calc(100% - 2px);
   background-color: #FFF;
   list-style: none;
 }

@@ -8,8 +8,10 @@ function App() {
     { option: "option3", value: "value3" }
   ];
 
-  const handleChange = ({ currentTarget }) => {
-    const { name, value } = currentTarget;
+  const handleChange = (event) => {
+    console.log(event.target.value);
+
+    const { name, value } = event.currentTarget;
     console.log(name, value);
   };
 
