@@ -4,7 +4,7 @@
 
 * [Installation](#installation)
 * [Examples](#examples)
-* [Demos](#demos)
+* [Demo](#demo)
 
 
 ## Installation
@@ -44,3 +44,6 @@ function App() {
   );
 }
 ```
+
+## Demo
+Demo - [https://codesandbox.io/s/hrnet-react-selectmenu-e5e8ov](https://codesandbox.io/s/hrnet-react-selectmenu-e5e8ov)
