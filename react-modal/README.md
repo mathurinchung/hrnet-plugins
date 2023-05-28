@@ -22,7 +22,7 @@ Here is a simple example of react-modal being used in an app:
 
 ```jsx
 import { useState } from 'react';
-import { Modal } from '@hrnet/react-modal';
+import { Modal } from '@hrnet-plugins/react-modal';
 
 export default function App() {
   const [ showModal, setShowModal ] = useState(false);
