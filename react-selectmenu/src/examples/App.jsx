@@ -1,4 +1,3 @@
-
 import { SelectMenu } from '../lib';
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
     { option: "option3", value: "value3" }
   ];
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     console.log(event.target.value);
 
     const { name, value } = event.currentTarget;
