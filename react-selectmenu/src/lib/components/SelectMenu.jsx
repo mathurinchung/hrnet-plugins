@@ -16,18 +16,6 @@ import './SelectMenu.css';
  * @param { function } onChange - A callback function that gets triggered when an option is selected.
  * 
  * @returns { React.Element } The rendered SelectMenu component.
- *
- * @example
- * // options array
- * const options = [
- *    { option: 'Option 1', value: '1' },
- *    { option: 'Option 2', value: '2' }
- * ];
- * 
- * // Handle change function
- * const handleChange = (event) => console.log(event.target.value);
- * 
- * <SelectMenu id="example" options={options} onChange={handleChange} />
  */
 function SelectMenu({ id, options, onChange }) {
   const [ visible, setVisible ] = useState(false);
