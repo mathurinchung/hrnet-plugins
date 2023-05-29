@@ -1,6 +1,6 @@
 {
   "name": "@hrnet-plugins/react-datatable",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -20,7 +20,7 @@
     "dist": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "dependencies": {
-    "@hrnet-plugins/react-selectmenu": "^0.1.7",
+    "@hrnet-plugins/react-selectmenu": "^0.1.8",
     "prop-types": "^15.8.1"
   },
   "devDependencies": {
@@ -35,7 +35,6 @@
     "react-scripts": "^5.0.1"
   },
   "peerDependencies": {
-    "@hrnet-plugins/react-selectmenu": "^0.1.7",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
