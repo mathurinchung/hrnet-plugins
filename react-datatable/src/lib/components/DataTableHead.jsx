@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 /**
  * This DataTableHead component is a React component that manages the header of a data table.
@@ -39,5 +40,13 @@ function DataTableHead({ columns, onSorting }) {
     </thead>
   );
 }
+
+DataTableHead.propTypes = {
+  columns: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    data: PropTypes.string.isRequired
+  })).isRequired,
+  onSorting: PropTypes.func.isRequired
+};
 
 export default DataTableHead;

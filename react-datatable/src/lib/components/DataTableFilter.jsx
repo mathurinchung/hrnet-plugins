@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * This DataTableFilter component is a React component that provides search functionality for a data table.
@@ -27,5 +28,10 @@ function DataTableFilter({ onSearch }) {
     </form>
   );
 }
+
+
+DataTableFilter.propTypes = {
+  onSearch: PropTypes.func.isRequired
+};
 
 export default DataTableFilter;

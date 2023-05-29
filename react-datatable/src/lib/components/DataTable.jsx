@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import PropTypes from 'prop-types';
 import DataTableShow from './DataTableShow';
 import DataTableFilter from './DataTableFilter';
 import DataTableHead from './DataTableHead';
@@ -69,5 +70,15 @@ function DataTable({ id, className, columns, data }) {
     </div>
   );
 }
+
+DataTable.propTypes = {
+  id: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+  columns: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    data: PropTypes.string.isRequired
+  })).isRequired,
+  data: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default DataTable;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 /**
  * The DataTablePagination component is a React component that manages the pagination of a data table.
@@ -29,5 +30,12 @@ function DataTablePagination({ totalItems, itemsPerPage, currentPage, onPageChan
     </div>
   );
 }
+
+DataTablePagination.propTypes = {
+  totalItems: PropTypes.number,
+  itemsPerPage: PropTypes.number,
+  currentPage: PropTypes.number,
+  onPageChange: PropTypes.func
+};
 
 export default DataTablePagination;

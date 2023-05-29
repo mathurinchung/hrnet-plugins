@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { SelectMenu } from "@hrnet-plugins/react-selectmenu";
 
 /**
@@ -27,5 +28,9 @@ function DataTableShow({ onChange }) {
     </div>
   );
 }
+
+DataTableShow.propTypes = {
+  onChange: PropTypes.func.isRequired
+};
 
 export default DataTableShow;

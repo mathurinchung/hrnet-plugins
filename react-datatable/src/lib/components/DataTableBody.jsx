@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * This DataTableBody component is a React component that manages the body of a data table. 
@@ -30,5 +31,13 @@ function DataTableBody({ entries, columns }) {
     </tbody>
   );
 }
+
+DataTableBody.propTypes = {
+  entries: PropTypes.arrayOf(PropTypes.object),
+  columns: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    data: PropTypes.string.isRequired
+  })).isRequired
+};
 
 export default DataTableBody;

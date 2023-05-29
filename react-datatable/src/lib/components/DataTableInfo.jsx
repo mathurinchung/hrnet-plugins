@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * The DataTableInfo component is a React component that displays the range of entries currently being shown in a data table, 
@@ -19,5 +20,11 @@ function DataTableInfo({ startItem, endItem, totalItems }) {
     </div>
   );
 }
+
+DataTableInfo.propTypes = {
+  startItem: PropTypes.number,
+  endItem: PropTypes.number,
+  totalItems: PropTypes.number
+};
 
 export default DataTableInfo;
