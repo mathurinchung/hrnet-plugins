@@ -2,7 +2,10 @@ import { DataTable } from '../lib';
 import columns from './data/columns.json';
 
 function App() {
-  const data = [];
+  const data = [
+    { id: "00", name: "marc" },
+    { id: "01", name: "marc" },
+  ];
 
   return (
     <div className="App">

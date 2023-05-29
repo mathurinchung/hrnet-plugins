@@ -23,7 +23,7 @@ function DataTableBody({ entries, columns }) {
           </tr>
         )
         : entries.map((entry, index) => (
-          <tr key={ index } className={ "table-row" + index % 2 !== 0 ? "odd" : ""}>
+          <tr key={ index } className={"table-row" + (index % 2 === 0 ? " odd" : "")}>
             { columns.map((column, index) => <td key={ index }>{ entry[ column.data ] }</td>) }
           </tr>
         ))
