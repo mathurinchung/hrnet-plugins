@@ -62,9 +62,12 @@
   height: 34px;
 }
 
+.datatable-grid .odd {
+  background-color: #d6d6d6;
+}
+
 .datatable-grid .empty {
   text-align: center;
-  background-color: #d6d6d6;
 }
 
 /* Info */

@@ -18,12 +18,12 @@ function DataTableBody({ entries, columns }) {
       {
         (!entries || entries.length === 0)
         ? (
-          <tr className="table-row empty">
+          <tr className="table-row odd empty">
             <td colSpan={ columns.length }>No data available in table</td>
           </tr>
         )
         : entries.map((entry, index) => (
-          <tr key={ index } className="table-row">
+          <tr key={ index } className={ "table-row" + index % 2 !== 0 ? "odd" : ""}>
             { columns.map((column, index) => <td key={ index }>{ entry[ column.data ] }</td>) }
           </tr>
         ))
